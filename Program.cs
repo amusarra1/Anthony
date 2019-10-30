@@ -1,42 +1,24 @@
 ﻿using System;
 
-namespace Week1AnthonyMusarra
+namespace InClass_week2__Anthony_Musarra_
 {
     class Program
     {
         static void Main(string[] args)
         {
+            //int mynumber
+            Car mymobile = new Car();
 
+            mymobile.make = "Honda";
+            mymobile.model = "Civic";
+            mymobile.color = "blue";
 
-            //This program adds 2 numbers.
+            Console.WriteLine("Enter the year of your car: ");
+            //mymobile.year = Console.ReadLine();
+            mymobile.year = Convert.ToInt32(Console.ReadLine());
 
-            string str1, str2;
-
-            str1 = "hello world";
-
-            str2 = "Lebron James";
-
-
-            Console.WriteLine(str1 + " from " + str2);
-
-
-
-
-
-
-
-
-
-
-            int num1, num2, num3;
-
-            num1 = 27;
-            num2 = 55;
-
-            num3 = num1 * num2;
-
-
-            Console.WriteLine("The Product of " +  " num1 "  + " and "  + num2 + " is "  + num3);
+            Console.WriteLine("My car is a {0} {1} {2} {3}",mymobile.year,mymobile.color,mymobile.make,mymobile.model);
         }
     }
+
 }
