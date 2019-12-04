@@ -64,7 +64,7 @@ namespace Lab6___Anthony_Musarra
                     int i = 0;
                     {
                         while (i < names.Length)
-                            Console.WriteLine(names[0]);
+                            Console.WriteLine(names[i++]);
                     }
 
 
